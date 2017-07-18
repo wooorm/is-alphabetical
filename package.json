@@ -10,14 +10,14 @@
     "code",
     "alphabetical"
   ],
-  "files": [
-    "index.js"
-  ],
-  "repository": "https://github.com/wooorm/is-alphabetical",
+  "repository": "wooorm/is-alphabetical",
   "bugs": "https://github.com/wooorm/is-alphabetical/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -56,6 +56,8 @@
     "branches": 100
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
