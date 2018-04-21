@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var alphabetical = require('./');
+var alphabetical = require('.');
 
 test('alphabetical(character)', function (t) {
   t.ok(alphabetical('a'));
