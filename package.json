@@ -12,9 +12,9 @@
   ],
   "repository": "wooorm/is-alphabetical",
   "bugs": "https://github.com/wooorm/is-alphabetical/issues",
-  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
-    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
   "files": [
     "index.js"
