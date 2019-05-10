@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: qxJP8t5UB4pFEKHBeWFPIzevJ/vq4MmCnTtgw7Aii06doLuluTD+9KabQy9+1wrL4UyHaBUWjmPYGnmqhJDPYxfYAtArvjsmp5fIjU4WhbKo5SxKOLOj+hSuGgazMmPLW10A9StN/e9h0vptdEFaVMi6qCg5EkMlvHKpzM/0dVU5P6pmO+1Kbo3M1NMN8jKp7VcZwnHWg99TAsr3VFtS6U9izig0lDepE9OOZA2xMdKW/Nq/yweupJJ2RaNkvTseqfcK6YfOpNbYs/Gb8m+cHaNX5XUVoOT68oonBYtEROwMeKBvur/3ZQKEZRhpSW4RtdGhpAgo28KPEBnzHDyGM+Kyrm6L47WqfFk4mU9ZbTUSmNm3lhWgW0Fgue7ZvlM0tOVe2SOOWkKWO3oh6Io44KtWeKNQMn8RWdhsmM9d5r/cXORfIgkxXF5+nkK9223ySbULjrm9OfCBlGBRTBTP7pCIx9mnfhSVT5Gj133Pq+4jo9c6BEoshRYmfKBcE4QS2MWDLz0PcvtL2+Qhrb5uYxw37xwo9atDJlMh4jHhFHR0VOBitdzSX5hb3u/dqlPEWD8YQ27ZIP+ysONc9BqpOFrdVSbnu3TSQYPsTVzpmAg3tGloRxg1rON3pkobBSNw6my5NMc8gPrFfUU8fsdMoSBbuKLPGzGIluyoMHKC490=
+    secure: WHGaR9AFaUav9RaPGHXaKwGeVB+d46hSC5UTAI/YNNozvFTw2jyF8TXMxqsBdsU+nm3yNMeqjkzq9P8PAkMNE9PmQzxKc8IGQ9kVBjscRN+0twgbggwlc6qqkGyDsNjSpXpaxPyVTZi0gsp6IKtIwKO7R6dm5BNsUEIUPdepbjnv2GM1mLcA99JfF67AMQR2F6jloFDgAM97KARj1UlUmd90Oxpy7Bny2QYHyUaDktNxntXmEbodgxdMK7JbMNPRl/h15bHprQISL9NFC1Zih1U14pvT0vyz4AKiAEtbL96nprf9C3Y2e7N5yxaTtf0XTnEDliDXs81C5bdMR79w+38BCaUUuMc/Rs8VS9BY7r+8tKlkC6JLdJOGZYe0daMElzSN0a5aJnqWwE2CcI66YPgFAYlSK7WxG+L6SkxgWWZqgVdK9WYMta7imX2oL1E7HVL7zbGfSA/jMeI2dv3Q89jcn3X6M5dl8F8rrHPK5u1I/3+2VvcE7Q2YDUzjxwgBPs8Nds0M/Eutr7oL8saN++V7Gfd54gb4LXA6G3qPfwdzCLktgpRt7GDWn3yHXakWtHguHfyqvydpaQXpDSD6+i1k3BkRXol8QSbCi63af6f+1rUglK7BLqdDh3ICO9QzbRoXte/5eAcDLeOQajskn/2UtG1aGheBoCnnRweGJCw=
   file:
-    - "is-alphabetical.js"
-    - "is-alphabetical.min.js"
+    - 'is-alphabetical.js'
+    - 'is-alphabetical.min.js'
   on:
     tags: true
