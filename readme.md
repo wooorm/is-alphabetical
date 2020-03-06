@@ -5,7 +5,7 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Check if a character is alphabetical.
+Check if a character is (ASCII) alphabetical.
 
 ## Install
 
