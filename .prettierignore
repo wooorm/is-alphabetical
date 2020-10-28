@@ -1,3 +1,5 @@
 coverage/
 is-alphabetical.js
 is-alphabetical.min.js
+*.json
+*.md

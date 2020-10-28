@@ -3,7 +3,7 @@
 var test = require('tape')
 var alphabetical = require('.')
 
-test('alphabetical(character)', function(t) {
+test('alphabetical(character)', function (t) {
   t.ok(alphabetical('a'))
   t.ok(alphabetical('Z'))
   t.ok(alphabetical('a'.charCodeAt(0)))
