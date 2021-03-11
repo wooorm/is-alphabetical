@@ -47,9 +47,9 @@ first position (`string`), is alphabetical.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-alphabetical.svg
+[build-badge]: https://github.com/wooorm/is-alphabetical/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-alphabetical
+[build]: https://github.com/wooorm/is-alphabetical/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-alphabetical.svg
 
