@@ -9,6 +9,9 @@ Check if a character is (ASCII) alphabetical.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,17 +21,20 @@ npm install is-alphabetical
 ## Use
 
 ```js
-var alphabetical = require('is-alphabetical')
+import {isAlphabetical} from 'is-alphabetical'
 
-alphabetical('a') // => true
-alphabetical('B') // => true
-alphabetical('0') // => false
-alphabetical('💩') // => false
+isAlphabetical('a') // => true
+isAlphabetical('B') // => true
+isAlphabetical('0') // => false
+isAlphabetical('💩') // => false
 ```
 
 ## API
 
-### `alphabetical(character|code)`
+This package exports the following identifiers: `isAlphabetical`.
+There is no default export.
+
+### `isAlphabetical(character|code)`
 
 Check whether the given character code (`number`), or the character code at the
 first position (`string`), is alphabetical.
