@@ -5,17 +5,55 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Check if a character is (ASCII) alphabetical.
+Check if a character is alphabetical.
+
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`isAlphabetical(character|code)`](#isalphabeticalcharactercode)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
+
+## What is this?
+
+This is a function that checks if a given character is ASCII alphabetical:
+matching `[a-z]`, case insensitive.
+
+## When should I use this?
+
+Not often, as it’s relatively simple to do yourself.
+This package exists because it’s needed in several related packages, at which
+point it becomes useful to defer to one shared function.
 
 ## Install
 
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 
 ```sh
 npm install is-alphabetical
+```
+
+In Deno with [Skypack][]:
+
+```js
+import {isAlphabetical} from 'https://cdn.skypack.dev/is-alphabetical@2?dts'
+```
+
+In browsers with [Skypack][]:
+
+```html
+<script type="module">
+  import {isAlphabetical} from 'https://cdn.skypack.dev/is-alphabetical@2?min'
+</script>
 ```
 
 ## Use
@@ -31,7 +69,7 @@ isAlphabetical('💩') // => false
 
 ## API
 
-This package exports the following identifiers: `isAlphabetical`.
+This package exports the following identifier: `isAlphabetical`.
 There is no default export.
 
 ### `isAlphabetical(character|code)`
@@ -39,13 +77,32 @@ There is no default export.
 Check whether the given character code (`number`), or the character code at the
 first position (`string`), is alphabetical.
 
+## Types
+
+This package is fully typed with [TypeScript][].
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+It also works in Deno and modern browsers.
+
+## Security
+
+This package is safe.
+
 ## Related
 
-*   [`is-decimal`](https://github.com/wooorm/is-decimal)
-*   [`is-hexadecimal`](https://github.com/wooorm/is-hexadecimal)
-*   [`is-alphanumerical`](https://github.com/wooorm/is-alphanumerical)
-*   [`is-whitespace-character`](https://github.com/wooorm/is-whitespace-character)
-*   [`is-word-character`](https://github.com/wooorm/is-word-character)
+*   [`wooorm/is-decimal`](https://github.com/wooorm/is-decimal)
+*   [`wooorm/is-hexadecimal`](https://github.com/wooorm/is-hexadecimal)
+*   [`wooorm/is-alphanumerical`](https://github.com/wooorm/is-alphanumerical)
+*   [`wooorm/is-whitespace-character`](https://github.com/wooorm/is-whitespace-character)
+*   [`wooorm/is-word-character`](https://github.com/wooorm/is-word-character)
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -71,6 +128,14 @@ first position (`string`), is alphabetical.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[skypack]: https://www.skypack.dev
+
 [license]: license
 
 [author]: https://wooorm.com
+
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
