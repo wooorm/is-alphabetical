@@ -7,10 +7,11 @@
  */
 export function isAlphabetical(character) {
   const code =
-    typeof character === 'string' ? character.charCodeAt(0) : character
+    typeof character === 'string' ? character.codePointAt(0) : character
 
   return (
-    (code >= 97 && code <= 122) /* a-z */ ||
-    (code >= 65 && code <= 90) /* A-Z */
+    code !== undefined &&
+    ((code >= 97 && code <= 122) /* a-z */ ||
+      (code >= 65 && code <= 90)) /* A-Z */
   )
 }
